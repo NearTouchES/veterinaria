@@ -1,11 +1,25 @@
-.idea
-target
+# IntelliJ IDEA
+.idea/
+
+# Java / Maven
+target/
+*.iml
+*.log
+
+# macOS
 .DS_Store
+
+# Terraform
 *.tfvars
 *.lock.hcl
-.terraform
-iac/data
-*/.next
-*/node_modules
-.env
+.terraform/
+iac/data/
+
+# Node / Next.js (en cualquier subcarpeta)
+*/.next/
+*/node_modules/
 package-lock.json
+
+# Entornos
+.env
+.env.local
