@@ -10,10 +10,7 @@
   "scripts": {
     "build": "tsc",
     "lint": "eslint .",
-    "test": "jest",
-    "docker-build": "../../scripts/docker-build.sh \"sixflags/fims-processor/lambda:latest\" \"functions/fims-processor/Dockerfile\"",
-    "docker-run": "../../scripts/docker-run.sh \"functions/fims-processor/.env\" \"sixflags/fims-processor/lambda:latest\"",
-    "local-invoke": "curl -s \"http://localhost:9000/2015-03-31/functions/function/invocations\" -d '{\"payload\":\"hello world!\"}' | tee /dev/tty"
+    "test": "jest"
   },
   "devDependencies": {
     "@eslint/js": "^9.15.0",
